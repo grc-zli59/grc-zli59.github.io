@@ -60,7 +60,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/Bricks\ Yellow.jpg); 
+  background: url(images/background.jpg); 
 		center center fixed no repeat;
 	background-size: cover;
 	
@@ -68,53 +68,60 @@ html, body {
 }
 
 .center {
-    width: 800px;
+    width: 80%; /* makes div responsive */
+	max-width: 800px;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
+	border-radius: 150px;
+ 	background: rgba(256, 256, 256, .60); /*this uses opacity of 60% for the background color*/
 	text-align: center;
-	border: 4px dashed white;
+	/* removed -- border: 4px dashed white;
+	*/
 }
 
    
 #logo {
-    margin-bottom: 16px;
-	border: 3px dashed red;
+    margin-bottom: 50px;
+	margin-top: 40px;
+	/* removed -- border: 3px dashed red;
+	*/
 	text-align: center;
 }
 
-h1 {
-	font-family: garamond, serif;
+/* deleted -- h1 {
+	font-family: Helvetica, sans-serif;
 	font-size: 2em;
     margin: 0px auto 10px auto;
     color: #fff;
-}
+} */
 
 h2 {
-	font-family: didot, serif;
-	font-size: 1.5em;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.1em;
     line-height: 1.4;
-    color: #fff;
+	letter-spacing: 5px;
+    color: #9bb470;
     padding: 0px 0px;
     margin: 0px auto 25px auto;
-}
+} 
 
 p {
-	font-family: garamond, serif;
+	font-family: veranda, serif;
 	font-size: 1.2em;
-    line-height: 1.6;
-    color: #fff;
+    font-weight: 700; 
+	line-height: 1.6;
+    color: #cce4eb;
 }
     
 nav{
-	font-family: garamond, serif;
+	font-family: didot, serif;
 	font-size: 1.2em;
+	font-weight: 700; 
+	letter-spacing: 2px;
 	width: 400px;
     margin: 0 auto;
-	border: dashed turquoise;
-	border-width: 3px 0;
 	text-align: center;
-	margin-top: 2em;
+	margin-top: 1em;
 	}
 
 nav li{
@@ -127,12 +134,13 @@ nav a{
 		}
 
 a{
-	color:cornsilk;
+	color:#93a9a9
+;
 	text-decoration: none;
 	font-weight: bold;
 	}
 
 a:hover{
-	color:black;
-	background:coral;
+	color:#607170;
+	/* delete -- background:coral;*/
 	}
