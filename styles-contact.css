@@ -70,7 +70,7 @@ html, body {
 .center {
     width: 80%; /* makes div responsive */
 	max-width: 800px;
-	padding: 2%;
+	padding: 5%;
     margin: 100px auto;
 	border-radius: 150px;
  	background: rgba(256, 256, 256, .60); /*this uses opacity of 60% for the background color*/
@@ -81,47 +81,51 @@ html, body {
 
    
 #logo {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 	margin-top: 40px;
 	/* removed -- border: 3px dashed red;
 	*/
 	text-align: center;
 }
 
-/* deleted -- h1 {
+h1 {
 	font-family: Helvetica, sans-serif;
-	font-size: 2em;
+	font-size: .9em;
+	font-weight: 100; 
+	letter-spacing: 5px;
+
     margin: 0px auto 10px auto;
-    color: #fff;
-} */
+    color: #93a9a9;
+}
 
 h2 {
-	font-family: Helvetica, sans-serif;
-	font-size: 1.1em;
+	font-family: didot, serif;
+	font-size: 2em;
     line-height: 1.4;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
+	font-weight: bold; 
     color: #9bb470;
-    padding: 0px 0px;
-    margin: 0px auto 25px auto;
+    padding: 50px 0px;
+    margin: 0px auto 1px auto;
 } 
 
-p {
+/* -- deleted p {
 	font-family: veranda, serif;
 	font-size: 1.2em;
     font-weight: 700; 
 	line-height: 1.6;
     color: #cce4eb;
-}
+} */
     
 nav{
 	font-family: didot, serif;
-	font-size: 1.2em;
-	font-weight: 700; 
+	font-size: 1.3em;
+	font-weight: 00; 
 	letter-spacing: 2px;
 	width: 400px;
     margin: 0 auto;
 	text-align: center;
-	margin-top: 1em;
+	margin-top: 0;
 	}
 
 nav li{
@@ -137,7 +141,7 @@ a{
 	color:#93a9a9
 ;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: bolder;
 	}
 
 a:hover{
