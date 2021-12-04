@@ -69,7 +69,7 @@ html, body {
 
 .center {
     width: 80%; /* makes div responsive */
-	max-width: 800px;
+	max-width: 750px;
 	padding: 5%;
     margin: 100px auto;
 	border-radius: 150px;
