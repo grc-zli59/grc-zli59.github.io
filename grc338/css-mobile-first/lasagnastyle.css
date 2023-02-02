@@ -58,3 +58,9 @@ ol {
 font-size: 1em;
 margin: .75rem 1rem 2rem;
 }
+footer {
+	background-color: #fe8700;
+	color: #faf9f6;; 
+	font-size: 1em;
+	padding: 1.5rem 1.5rem 1.5rem;
+}
