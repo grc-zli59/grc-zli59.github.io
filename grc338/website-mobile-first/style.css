@@ -4,6 +4,7 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 
 body {
 	font-family: sans-serif;
+	height: fit-content;
 }
 div.home-container { 
 	background: url(home-background.jpg) center center fixed;
@@ -19,7 +20,7 @@ div.container {
 
 
 main { 
-	padding: 1rem 2rem 1.5rem;
+	padding: 1rem 2rem 0rem;
 	}
 
 img {
@@ -32,7 +33,7 @@ header {
 	grid-template-columns: 75% auto;
 	background: #cdcdcd;
 	padding: 1rem .5rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: .5rem;
 	}
 
 h1 {
@@ -44,13 +45,13 @@ h2, h3, h4 {
 	}
 
 h2 {
-	font-size: 2em;
-	margin: 1rem 0rem 1.5rem;
+	font-size: 1.75em;
+	margin: 1rem 0rem .25rem;
 	}
 	
 h3 {
 	font-size: 1.5em;
-	margin: 1rem 0rem .5rem;
+	margin: 1.5rem 0rem .75rem;
 }
 
 
@@ -67,22 +68,22 @@ ul li 	{
 }
 
 figure {
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 main.menu ul {
-		margin: 1rem 0rem;
+	margin: 1rem 0rem;
 }	
 
 main.menu ul li {
-		margin: 3rem 0rem 2rem;
-		display: grid;
-		grid-template-columns: auto auto;
-		grid-template-rows: auto auto;
+	margin: 2rem 0rem 2rem;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
 }	
 
 p {
-	margin: 0rem 0rem 0rem;
+	margin: .5rem 0rem 1rem;
 	}
 	
 p.description {
@@ -95,7 +96,7 @@ p.price {
 	grid-column: 2/3;
 	color: #ff0000;
 	text-align: right;
-	margin: ____;
+	margin: 0rem;
 	}
 	
 nav ul li {
@@ -110,6 +111,9 @@ nav ul li a {
 	padding: .75rem .5rem .5rem;
 	}
 	
+/* ul.hours {
+	margin-bottom: 6rem;
+} */
 
 p.slogan {
 	font-size: 4.5em;
@@ -120,8 +124,8 @@ p.slogan {
 	}
 	
 footer {
-  position: absolute;
-  bottom: 1;
+  position: static;
+  bottom: 0;
   width: 100%;
   height: 3rem; 
   box-sizing: border-box;
