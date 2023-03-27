@@ -1,0 +1,204 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+html {
+	background-color: #ffffff;
+}
+
+body {
+	font-family: 'Montserrat';
+	font-size: small;
+	position: center;
+}
+
+div.home-container { 
+	background: url(coffeebeans.jpg) center center fixed;
+	background-size: cover;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 65em;
+	min-height: 100vh;
+	background-color: #ffffff;
+}
+
+div.container {
+	position: relative;
+	max-width: 65em;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100vh;
+	background-color: #ffffff;
+}
+
+/* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
+
+
+main { 
+	padding: 1rem 2rem 1.5rem;
+	min-height: 70vh;
+	}
+
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 20em auto;
+	background: #c69e73;
+	padding: 1rem .5rem;
+	margin-bottom: .5rem;
+	}
+
+h1 {
+	width: 10rem;
+	padding: .75rem;
+	}
+
+h2, h3, h4 {
+	font-weight: bold;
+	font-family:'bd supper';
+	font-size: medium;
+	}
+
+h2 {
+	font-size: 3em;
+	margin: 1rem 0rem .25rem;
+	}
+	
+h3 {
+	font-size: 2.5em;
+	margin: 1.5rem 0rem .75rem;
+	color: #c69e73;
+}
+
+h4 {
+	margin-bottom: .5rem;
+}
+
+a {
+	text-decoration: none;
+	}
+
+nav ul  {
+	text-align: right;
+	}
+	
+ul li 	{
+	list-style-type: none;
+}
+
+figure {
+	margin-bottom: 1.5rem;
+}
+
+main.menu ul {
+	margin: 1rem 0rem;
+}	
+
+main.menu ul li {
+	margin: 2rem 0rem 2rem;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+}	
+
+p {
+	margin: .5rem 0rem 1rem;
+	}
+	
+p.description {
+	grid-column: 1/3;
+	margin: 0rem 2.5rem 0rem 0rem;
+	}
+	
+p.price {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	color: #636363;
+	text-align: right;
+	margin: 0rem;
+	}
+	
+nav ul li {
+	text-transform: lowercase;
+	font-weight: normal;
+	font-size: 1.5em;
+	margin: 1.25rem;
+	}
+	
+nav ul li a {
+	color: #ffffff;
+	background-color: #c69e73;
+	padding: .75rem .5rem .5rem;
+	font-family: 'bd supper';	
+}
+
+nav ul li.selected a {
+	color: #c69e73;
+	background-color: #ffffff;
+ }
+	
+/* ul.hours {
+	margin-bottom: 6rem;
+} */
+
+p.slogan {
+	font-size: 4.5em;
+	font-family: 'bd supper';	
+	font-style: italic;
+	margin: 7rem 0rem 8rem;
+	color: #ffffff;
+	}
+	
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  box-sizing: border-box;
+  padding: 1.2rem .5rem;
+  background: #c69e73;
+}
+
+address {
+	color: #ffffff;
+	line-height: 2em;
+	}
+
+footer p {
+	margin: 0;
+}
+
+article {
+	max-width: 35em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+@media screen and (min-width: 60em) {
+	h1 {
+		padding: 0rem 1rem 0rem;
+	}
+	nav ul li {
+		display: inline;
+		font-size: 1.5em;
+	}
+
+	nav ul  {
+		margin-top: 3.5rem;
+		}
+
+	main.menu ul {
+		margin: 1rem 0rem;
+		display: grid;
+		column-gap: 3rem;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+	}
+	
+}
