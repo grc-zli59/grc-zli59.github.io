@@ -20,15 +20,15 @@ figure {
 	margin: 1em 0;
 }
 
-h1, h2, h3, h4, p, ul, ol, li {
-	font-family: "mrs-eaves", serif;
-	margin: 0; 
-	padding:0; 
+h1, h2, h3, h4, p, figcaption, ul, ol, li { 
+	margin: 0;
+	padding: 0; 
 	font-size: 1em; 
 	font-weight: normal;
 }
 
 h1 {
+	margin-bottom: 0.25em;
 	font-family: "futura-pt-bold", sans-serif;
 	font-weight: 700;
 	font-size: 30pt; 
@@ -36,17 +36,29 @@ h1 {
 }
 
 h2 {
+	font-family: "chantal", sans-serif;
+	font-weight: 600;
+	font-style: normal;
 	font-size: 22pt; 
-	font-weight: bold;
 }
 
 h3 {
+	font-family: "chantal", sans-serif;
 	font-size: 18pt; 
-	font-weight: _____;
+	font-weight: 200;
 }
 
 p {
-	font-size: 12pt; 
+	margin-bottom: 1em;
+	font-family: "richmond-text";
+	font-size: 10pt; 
 	font-weight: book;
+}
+
+figcaption{
+	font-family: "richmond-text";
+	font-weight: 400;
+	font-style: normal;
+	font-size: 8pt; 
 }
 
