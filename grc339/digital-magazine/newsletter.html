@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/bbx4zdm.css">
+        
+        <title>A Silly Little Garden</title>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+    </head>
+    <body>
+        <div class="survey-container">
+            <header>
+                <h1><a href="index.html"><img src="logo.png" alt="a silly little garden."></a></h1>
+                <nav class="header">
+                   <ul>
+                      <li><a href="index.html">Explore</a></li>
+                      <li><a href="newsletter.html">Newsletter</a></li>
+                      <li><a href="#">Houseplants</a></li>
+                      <li><a href="#">Vegetables</a></li>
+                      <li><a href="#">Flowers</a></li>
+                   </ul>
+                </nav>
+            <h2>Newsletter</h2>
+            <p>
+                Introducing "Plant of the Month", your new favorite green treat! Each month, our pamphlet spotlights a special plant, complete with fascinating facts, easy-to-follow care tips, and a packet of seeds to grow your own. Whether you’re a seasoned gardener or just starting out, “Plant of the Month” is the perfect way to discover new plants, expand your indoor garden, and enjoy the joy of watching something beautiful grow from seed to bloom!
+            </p>
+        </header>
+            <form>
+                <section class="personal-info">
+                    <h3>Personal information</h3>
+                    <ul>
+                        <li><label for="name">Name:</label> <input type="text" name="name" id="name" placeholder="your full name" /></li>
+                        <li><label for="street-address">Street address:</label> <input type="text" name="street-address" id="street-address" placeholder="your street address" /></li>
+                        <li><label for="city">City:</label> <input type="text" name="city" id="city" placeholder="city" /></li>
+                        <li>
+                            <label for="state">State:</label>
+                            <select id="state" name="state">
+                                <option value=""></option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </li>
+                        <li><label for="street-address">Zip code:</label> <input type="text" name="zip-code" id="zip-code" placeholder="zip code" /></li>
+                        <li><label for="email">Email:</label> <input type="email" name="email" id="email" placeholder="confirmation email" /></li>
+                        <li><label for="phone">Phone:</label> <input type="tel" name="phone" id="phone" placeholder="your phone number" /></li>
+                    </ul>
+                </section>
+
+                <section class="interest">
+                    <h3>Plant interest</h3>
+                    <p>Which lil green buddies strike your interest?</p>
+                    <ul>
+                        <li><input type="checkbox" id="herbs" value="herbs" name="plants" /> <label for="herbs">Herbs</label></li>
+                        <li><input type="checkbox" id="houseplants" value="houseplants" name="plants" /> <label for="houseplants">Houseplants</label></li>
+                        <li><input type="checkbox" id="vegetables" value="vegetables" name="plants" /> <label for="vegetables">Vegetables</label></li>
+                        <li><input type="checkbox" id="flowers" value="flowers" name="plants" /> <label for="flowers">Flowers</label></li>
+                    </ul>
+                </section>
+                <section  class="home-specs">
+                    <h3>Home Specifications</h3>
+                    <p>Which ones best describe your environment?</p>
+                    <ul>
+                        <li>
+                            <h4>Light Levels</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="light" value="bright-direct"> Bright, Direct Sunlight</label></li>
+                                <li><label><input type="radio" name="light" value="bright-indirect"> Bright, Indirect Sunlight</label></li>
+                                <li><label><input type="radio" name="light" value="low-light"> Low Light</label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Temperature</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="temperature" value="average"> Average Room Temperature</label></li>
+                                <li><label><input type="radio" name="temperature" value="cold"> Cold Drafts </label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Humidity</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="humidity" value="low"> Low Humidity</label></li>
+                                <li><label><input type="radio" name="humidity" value="moderate"> Moderate Humidity</label></li>
+                                <li><label><input type="radio" name="humidity" value="high"> High Humidity</label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Space</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="space" value="floor"> Large Floor Space</label></li>
+                                <li><label><input type="radio" name="space" value="shelf"> Shelf or Tabletop Space</label></li>
+                                <li><label><input type="radio" name="space" value="vertical"> Vertical Space</label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Air Quality</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="air" value="fresh"> Fresh Air</label></li>
+                                <li><label><input type="radio" name="air" value="indoor"> Indoor Air</label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Maintenance Level</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="maintenance" value="low"> Low Maintenance</label></li>
+                                <li><label><input type="radio" name="maintenance" value="moderate"> Moderate Maintenance</label></li>
+                                <li><label><input type="radio" name="maintenance" value="high"> High Maintenance</label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Pet Safety</h4>
+                            <ul class="options">
+                                <li><label><input type="radio" name="pets" value="safe"> Owns Pets</label></li>
+                                <li><label><input type="radio" name="pets" value="toxic"> No Pets</label></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section  class="method">
+                    <h3>Physical or Digital</h3>
+                    <p>How would you like to receive this newsletter?</p>
+                    <ul>
+                        <li><input type="radio" id="printed" value="printed" name="method" /> <label for="printed">Printed</label></li>
+                        <li><input type="radio" id="e-card" value="e-card" name="method" /> <label for="e-card">E-card</label></li>
+                    </ul>
+                </section>
+                <section><label for="notes">Please let us know if you have any questions concerns or general wonders.</label><textarea id="notes" name="notes"></textarea></section>
+                <section>
+                    <button type="submit">Submit</button>
+                </section>
+            </form>
+            <footer>
+                <p>All rights reserved.</p>
+             </footer>
+        </div>
+    </body>
+</html>
