@@ -33,7 +33,7 @@ div.container, div.home-container {
 ul {
 	list-style-type: none;
 	font-weight: medium;
-	font-size: 1.25em;
+	font-size: 1em;
 	margin: auto;
 	padding-left: 1em;
 	line-height: 1.5em;
@@ -125,7 +125,7 @@ footer {
 }
 
 div.photogallery-container {
-    background-color: #fafafa;
+    background-color: none;
     max-width: 60em;
     margin: 0 auto;
     padding: 1em;
@@ -134,7 +134,7 @@ div.photogallery-container {
 main.photogallery {
     position: relative;
     overflow: hidden;
-    padding-bottom: calc(58% + 10em);
+    padding-bottom: calc(48% + 10em);
 }
 
 main.photogallery figure {
@@ -146,10 +146,7 @@ main.photogallery figure {
 }
 
 main.photogallery figure img{
-   width: 60em;
-	height: 40em;
 	object-fit: cover;
-
 }
 
 figcaption {
@@ -173,13 +170,12 @@ input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
 
 nav.photogallery {
     display: flex;
-    grid-template-columns: 4;
+    grid-template-columns: repeat(auto-fill, minmax(calc(100% - 2em), 1fr));
     grid-gap: 0.2em;
 }
 
 nav.photogallery img {
-	width: 7.33em;
-	height: 7em;
+    height: 7em;
     object-fit: cover;
 }
 
@@ -256,16 +252,26 @@ textarea {
 	color: #777;
 	}
 
+div.survey-container section.button {
+	background: none;
+	display: flex;
+	justify-content: center;
+}
+
 button{
 	font-weight: medium;
 	font-family: "poleno",sans-serif;
-	color: #DA6A02;
+	background-color: #A1A23E;
+	padding: .5em 1em;
 	border: none;
-}
-
-div.survey-container li{
-	font-size: .75em;
-}
+	color: #fff;
+	text-align: center; 
+	text-decoration: none; 
+	display: inline-block;
+	font-size: 1.25em;
+	border-radius: 8px; 
+	margin-bottom: 3em;
+	}
 
 h4{
 	padding-left: 0;
@@ -277,7 +283,7 @@ h4{
 }
 
 nav.header ul li{
-	font-size: 1em;
+	font-size: 1.25em;
 }
 
 @media only screen and (min-width: 40em) {
@@ -287,6 +293,10 @@ nav.header ul li{
 
 	h1, h2, h3, section.secondary-story h2,section.tertiary-story h2, article h2, p, ul, figcaption {
 		padding-left: 0em;
+	}
+
+	main.photogallery {
+		padding-bottom: calc(58% + 10em);
 	}
 }
 
@@ -388,4 +398,5 @@ nav.header ul li{
 	section.secondary-story a p{
 		flex: 0 0 4em;
 	}
+
 }
